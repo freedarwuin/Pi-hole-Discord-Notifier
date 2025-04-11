@@ -1,23 +1,28 @@
 # Pi-hole Discord Notifier
 
-**Pi-hole-Discord-Notifier** es un sistema para monitorear la actividad de Pi-hole y recibir notificaciones automáticas a través de Discord. El proyecto incluye scripts para reportar estadísticas de bloqueos, detectar dispositivos nuevos en la red y más. Personalizable, fácil de usar y optimizado para Raspberry Pi.
+Este proyecto permite monitorear la actividad de Pi-hole y notificar alertas en Discord sobre los cambios en la red y el estado de Pi-hole.
 
-## 📜 Características
+## Requisitos
 
-- **Reporte de bloqueos de Pi-hole**: Notificaciones detalladas de la actividad de Pi-hole.
-- **Detección de dispositivos nuevos**: El script detecta nuevos dispositivos conectados a tu red y los reporta.
-- **Soporte para múltiples alertas**: Puedes agregar alertas personalizadas como uso de recursos, accesos no autorizados, y más.
+- Raspberry Pi 3 o superior.
+- Raspberry Pi OS instalado.
+- Pi-hole instalado y configurado.
+- Webhook de Discord para recibir las notificaciones.
 
-## ⚙️ Instalación
+## Instalación
 
-### Requisitos
+Sigue los pasos detallados en `INSTALL.md` para configurar el sistema operativo, instalar Pi-hole y configurar los scripts de notificación.
 
-- **Raspberry Pi** con **Raspbian** o **Raspberry Pi OS**.
-- **Pi-hole** instalado y configurado.
-- **Acceso a Discord** para recibir las notificaciones.
+## Scripts
 
-### 1. Clonar el repositorio
+- **pihole-vigilante.sh**: Monitorea el estado de Pi-hole y envía alertas a Discord.
+- **pihole-detect-devices.sh**: Detecta nuevos dispositivos en la red y envía alertas a Discord.
 
-```bash
-git clone https://github.com/tu-usuario/Pi-hole-Discord-Notifier.git
-cd Pi-hole-Discord-Notifier
+## Configuración
+
+- Asegúrate de configurar correctamente los **Webhooks de Discord** en los scripts.
+- Puedes configurar la ejecución automática de los scripts a través de cron.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas agregar una funcionalidad o corregir un error, abre un **pull request**.
