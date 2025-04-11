@@ -1,28 +1,24 @@
-# Pi-hole Discord Notifier
+# Pi-hole Discord Notifier 🚀
 
-Este proyecto permite monitorear la actividad de Pi-hole y notificar alertas en Discord sobre los cambios en la red y el estado de Pi-hole.
+Este proyecto te permite **monitorear Pi-hole** y recibir **notificaciones en Discord** sobre el estado de Pi-hole y dispositivos conectados a tu red.
 
-## Requisitos
+![Pi-hole Discord Notifier](https://www.example.com/pi-hole-discord-notifier-banner.png)
 
-- Raspberry Pi 3 o superior.
-- Raspberry Pi OS instalado.
-- Pi-hole instalado y configurado.
-- Webhook de Discord para recibir las notificaciones.
+## 🔧 Requisitos
 
-## Instalación
+Antes de comenzar, asegúrate de tener lo siguiente:
+- **Raspberry Pi 3 o superior** con **Raspberry Pi OS**.
+- **Conexión a Internet** (Wi-Fi o Ethernet).
+- **Pi-hole instalado** en tu Raspberry Pi.
+- **Webhook de Discord** para las notificaciones.
 
-Sigue los pasos detallados en `INSTALL.md` para configurar el sistema operativo, instalar Pi-hole y configurar los scripts de notificación.
+## 🛠️ Instalación
 
-## Scripts
+Sigue los pasos detallados a continuación para configurar Pi-hole y los scripts para que envíen notificaciones a Discord.
 
-- **pihole-vigilante.sh**: Monitorea el estado de Pi-hole y envía alertas a Discord.
-- **pihole-detect-devices.sh**: Detecta nuevos dispositivos en la red y envía alertas a Discord.
+1. **Clonar el repositorio**:
 
-## Configuración
+   Clona este repositorio para obtener los scripts necesarios.
 
-- Asegúrate de configurar correctamente los **Webhooks de Discord** en los scripts.
-- Puedes configurar la ejecución automática de los scripts a través de cron.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas agregar una funcionalidad o corregir un error, abre un **pull request**.
+   ```bash
+   git clone https://github.com/TU_USUARIO/Pi-hole-Discord-Notifier.git
