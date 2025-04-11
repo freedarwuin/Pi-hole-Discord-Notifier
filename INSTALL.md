@@ -1,6 +1,4 @@
 
-### **Ejemplo Mejorado para `INSTALL.md`**
-
 ```markdown
 # Guía de Instalación para Raspberry Pi 3 ⚙️
 
