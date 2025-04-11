@@ -1,39 +1,41 @@
-# Guía de Instalación para Raspberry Pi 3
+
+### **Ejemplo Mejorado para `INSTALL.md`**
+
+```markdown
+# Guía de Instalación para Raspberry Pi 3 ⚙️
+
+Sigue estos pasos para configurar tu Raspberry Pi 3 con Pi-hole y recibir notificaciones en Discord.
+
+![Raspberry Pi 3](https://www.example.com/raspberry-pi3-image.png)
 
 ## Requisitos Iniciales
 
 Antes de comenzar, asegúrate de tener lo siguiente:
-- **Raspberry Pi 3** con Raspberry Pi OS instalado.
-- **Tarjeta microSD** (mínimo 8GB de capacidad, se recomienda 16GB o más).
-- **Fuente de alimentación** para la Raspberry Pi 3.
-- **Conexión a Internet** (puedes usar Wi-Fi o Ethernet).
-- **Acceso a una terminal/SSH** para realizar las configuraciones.
-- **Webhook de Discord** para recibir las notificaciones de Pi-hole.
+- **Raspberry Pi 3 o superior**.
+- **Tarjeta microSD** de al menos 8GB.
+- **Conexión a Internet** (Wi-Fi o Ethernet).
+- **Acceso SSH** a tu Raspberry Pi (si lo deseas).
+- **Webhook de Discord** para las notificaciones.
 
-## Pasos de Instalación
+---
+
+## 🔥 Pasos de Instalación
 
 ### 1. **Descargar e Instalar Raspberry Pi OS**
 
-1. Dirígete a [la página de descargas de Raspberry Pi](https://www.raspberrypi.org/downloads/).
-2. Descarga y utiliza el **Raspberry Pi Imager** para escribir la imagen de Raspberry Pi OS en la tarjeta microSD.
-3. Conecta la tarjeta microSD en tu Raspberry Pi y enciéndela. La Raspberry Pi debería arrancar automáticamente.
+1. Ve a [la página de descargas de Raspberry Pi](https://www.raspberrypi.org/downloads/).
+2. Descarga el **Raspberry Pi Imager** y escribe la imagen en tu tarjeta microSD.
+3. Inserta la tarjeta microSD en la Raspberry Pi y conéctala a una pantalla, teclado y ratón.
 
-### 2. **Configuración Inicial de Raspberry Pi OS**
+   ![Instalación de Raspberry Pi OS](https://www.example.com/raspberry-pi-os-setup.png)
 
-1. Una vez que el sistema arranque, sigue las instrucciones para:
-    - Configurar el idioma y la zona horaria.
-    - Conectarte a la red Wi-Fi (si no usas Ethernet).
-    - Cambiar la contraseña predeterminada de la Raspberry Pi.
-2. Asegúrate de **activar SSH** para poder conectarte de forma remota desde otro dispositivo. Esto lo puedes hacer mediante `raspi-config`:
-    - Ejecuta el siguiente comando:
+### 2. **Configurar Raspberry Pi OS**
 
-      ```bash
-      sudo raspi-config
-      ```
-
-    - Ve a **Interfacing Options > SSH** y habilítalo.
-
-3. **Actualiza tu Raspberry Pi** para asegurarte de que todo el software esté actualizado:
-
+1. Enciende la Raspberry Pi y sigue las instrucciones en pantalla para configurar:
+   - Idioma y zona horaria.
+   - Conexión a la red (Wi-Fi o Ethernet).
+   - Cambiar la contraseña predeterminada.
+2. **Activar SSH** para acceso remoto, si lo necesitas:
+   
    ```bash
-   sudo apt update && sudo apt upgrade -y
+   sudo raspi-config
